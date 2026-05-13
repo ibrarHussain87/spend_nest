@@ -1,0 +1,9 @@
+{
+    "name": "SpendNest",
+    "short_name": "SpendNest",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#E8F5E9",
+    "theme_color": "#2E7D32",
+    "description": "Expense tracker with Firebase."
+}
