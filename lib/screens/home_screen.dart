@@ -5,6 +5,8 @@ import "../models/expense.dart";
 import "../services/expense_repository.dart";
 import "../widgets/add_expense_sheet.dart";
 
+typedef _ExpenseList = List<Expense>;
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
     super.key,
@@ -39,7 +41,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: StreamBuilder<List<Expense>>>(
+      body: StreamBuilder<_ExpenseList>(
         stream: repository.watchExpenses(),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
